@@ -1,4 +1,4 @@
-# README: Iris Dataset Classification with Spark MLlib
+# Assignment 1: Iris Dataset Classification with Spark MLlib: Model Implementation and Comparative Analysis
 
 1. Project Overview
 This project demonstrates a complete machine learning workflow using Spark MLlib for classifying the Iris dataset. It covers data loading, preprocessing, model implementation (Decision Tree, Random Forest, Logistic Regression), hyperparameter tuning using cross-validation and grid search, evaluation of tuned models, and a comprehensive comparative analysis of their performance, strengths, and limitations.
@@ -20,22 +20,22 @@ The machine learning workflow in this notebook follows these steps:
 6.  **Tuned Model Evaluation**: The best models from the tuning process are evaluated using accuracy, F1-score, weighted precision, and weighted recall.
 7.  **Comparative Analysis**: A detailed comparison of the tuned models' performance, strengths, and limitations is provided.
 
-## Summary of Results and Key Findings
+8. Summary of Results and Key Findings
 
-### Performance Metrics Comparison
+Performance Metrics Comparison
 | Model                     | Accuracy | F1-Score | Weighted Precision | Weighted Recall |
 |:--------------------------|:---------|:---------|:-------------------|:----------------|
 | Tuned Decision Tree       | 1.0      | 1.0      | 1.0                | 1.0             |
 | Tuned Random Forest       | 1.0      | 1.0      | 1.0                | 1.0             |
 | Tuned Logistic Regression | 0.96875  | 0.96867  | 0.97159            | 0.96875         |
 
-### Key Findings
+9. Key Findings
 *   **Perfect Performance for Decision Tree and Random Forest**: Both the tuned Decision Tree and Random Forest models achieved perfect classification (100% accuracy, F1-score, precision, and recall) on the Iris test dataset. This highlights the high separability of the Iris dataset classes.
 *   **Strong Performance for Logistic Regression**: The tuned Logistic Regression model also performed exceptionally well, achieving an accuracy of approximately 96.88%. This indicates that even a simpler linear model can effectively classify the Iris species.
 *   **Impact of Tuning**: While all initial models performed well, hyperparameter tuning ensured that the models were optimized for the dataset. For instance, the optimal `maxDepth` for Decision Tree and Random Forest was 5, suggesting that a relatively shallow tree structure is sufficient for this dataset.
 *   **Model Strengths and Limitations**: Although Decision Tree and Random Forest achieved perfect scores, in more complex real-world scenarios, Random Forest typically offers greater robustness and generalization due to its ensemble nature. Logistic Regression, while simpler and interpretable, might struggle with highly non-linear relationships.
 
-## Instructions to Reproduce the Analysis
+10. Instructions to Reproduce the Analysis
 
 To reproduce this analysis, follow these steps:
 
